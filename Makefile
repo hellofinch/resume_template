@@ -17,7 +17,7 @@ zh_CN: clean
 	# xelatex -output-directory=build resume-zh_CN.tex 
 
 	xelatex -output-directory=build resume-zh_CN.tex 
-	mv build/resume-zh_CN.pdf build/xxx-xxx.pdf
+	# mv build/resume-zh_CN.pdf build/xxx-xxx.pdf
 
 pdf: clean $(PDFS)
 
