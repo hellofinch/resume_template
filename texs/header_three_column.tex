@@ -1,0 +1,39 @@
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\begin{tblr}{
+    width = \linewidth,
+    colspec = {Q[l,2.25cm]X[c]Q[r,2.25cm]},
+    rows = {abovesep=0pt, belowsep=0pt},
+    columns = {colsep=2pt},
+    row{1} = {ht=4.5em, font=\Huge\scshape},
+    row{3} = {ht=2em, abovesep=0pt},
+  }
+  & 洛凡 &  \\
+\end{tblr}
+
+\section{基本资料}
+  % 左：信息网格；右：证件照
+\begin{tabular}{@{}p{0.72\linewidth} >{\centering\arraybackslash}m{0.23\linewidth}@{}}
+  % --- 左列：用 minipage 包住内部 tabularx，避免直接嵌套出错 ---
+  \begin{minipage}[t]{\linewidth}
+
+    \setlength{\tabcolsep}{4pt}             % 仅影响组内列的默认左右留白
+    \renewcommand{\arraystretch}{1.35}      % 行距
+
+    % 组间距参数（你只需要改这里即可）
+    \newcommand{\GroupSep}{1.5em}
+    \begin{tabularx}{\linewidth}{@{}L{6em}Y @{\hspace{\GroupSep}} L{6em}Y @{}}
+      \textbf{姓\hspace{1em}名：} & 洛凡  & & \textbf{性\hspace{1em}别：} & \boy or \girl & \\
+      \textbf{年\hspace{1em}龄：} & 60    & & \textbf{出生年月：} & 2024.1.1 & \\
+      \textbf{民\hspace{1em}族：} & x    & & \textbf{籍\hspace{1em}贯：} & x & \\
+      \textbf{毕业院校：}         & x & & \textbf{政治面貌：} & x & \\
+      \textbf{电子邮箱：}         & demo@163.com    & & \textbf{联系电话：} & x111111111111 & \\
+    \end{tabularx}
+  \end{minipage}
+  &
+  % --- 右列：图片会随 m{} 列自动与左侧内容垂直居中 ---
+  \includegraphics[width=0.7\linewidth]{images/avatar.jpg}
+\end{tabular}
+
+
+

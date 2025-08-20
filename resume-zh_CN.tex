@@ -3,15 +3,21 @@
 % !Mode:: "TeX:UTF-8"
 
 \documentclass{resume}
-\usepackage{stys/zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{stys/zh_CN-Adobefonts_external} 
+% Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 % \usepackage{stys/NotoSansSC_external}
 % \usepackage{stys/NotoSerifCJKsc_external}
 % \usepackage{stys/zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{stys/linespacing_fix} % disable extra space before next section
 \usepackage{bookmark}
 \usepackage{cite}
-% \usepackage{graphicx} % for header_with_photo. avatar
-% \usepackage{tabularray} % for header_with_photo
+\usepackage{graphicx} % for header_with_photo. avatar
+\usepackage{tabularray} % for header_with_photo
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage[most]{tcolorbox}
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -21,7 +27,8 @@
 % \settitlelinestyle{fullbg}
 
 % \input{texs/header_with_photo} % uncomment line #13 #14!
-\input{texs/header}
+\input{texs/header_three_column} % uncomment line #13 #14!
+% \input{texs/header}
 \input{texs/sections}
 
 %% Reference
