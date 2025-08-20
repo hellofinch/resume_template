@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{resume}[2024/09/22 An elegant Résumé class]
+\ProvidesClass{resume}[2025/08 An elegant Résumé class]
 \LoadClass[11pt]{article}
 
 % disable indent globally
