@@ -114,6 +114,11 @@
 \newcommand{\datedsubsection}[2]{%
   \subsection[#1]{#1 \hfill #2}%
 }
+
+\newcommand{\project}[4]{%
+  \subsection[#1]{\textbullet\ \textbf{#1} \hfill \small #2 \hfill \textbf{#3} \normalsize \hfill #4}%
+}
+
 \newcommand{\datedline}[2]{%
   {\par #1 \hfill #2 \par}%
 }
