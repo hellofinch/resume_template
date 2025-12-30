@@ -240,6 +240,11 @@
   \vspace{0.6ex}
 }
 
+\newcommand{\background}[1]{
+  {\par \textbf{背景：} ~ #1 \par}
+  \vspace{0.3ex}
+}
+
 \newcommand{\texthl}[1]{\textcolor{accentcolor}{\textbf{#1}}}
 
 \newcommand{\normalline}[1]{\par #1 \par}
